@@ -19,6 +19,8 @@ Then install the guidelines with Boost:
 php artisan boost:install
 ```
 
+![](.github/boost-install.jpg)
+
 The guidelines will be automatically copied to `.ai/guidelines/boost-spatie-guidelines/` and loaded by Laravel Boost.
 
 ## What's Included
