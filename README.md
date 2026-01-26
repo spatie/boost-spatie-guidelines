@@ -45,18 +45,12 @@ Re-run the Boost installer after updating the package to refresh guidelines:
 
 ```bash
 composer update spatie/boost-spatie-guidelines
-php artisan boost:install
+php artisan boost:update
 ```
 
 ## Full Guidelines
 
 View the complete, human-readable guidelines at [spatie.be/guidelines](https://spatie.be/guidelines).
-
-## Testing
-
-```bash
-composer test
-```
 
 ## Changelog
 
