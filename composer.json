@@ -22,26 +22,10 @@
         "php": "^8.2",
         "illuminate/support": "^10.0|^11.0|^12.0"
     },
-    "require-dev": {
-        "laravel/pint": "^1.0",
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
-        "pestphp/pest": "^2.0|^3.0|^4.0",
-        "phpstan/phpstan": "^2.0"
-    },
     "autoload": {
         "psr-4": {
             "Spatie\\BoostSpatieGuidelines\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\BoostSpatieGuidelines\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/pest",
-        "format": "vendor/bin/pint",
-        "analyse": "vendor/bin/phpstan analyse"
     },
     "extra": {
         "laravel": {
