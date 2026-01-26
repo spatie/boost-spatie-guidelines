@@ -1,0 +1,55 @@
+{
+    "name": "spatie/boost-spatie-guidelines",
+    "description": "Spatie's Laravel & PHP coding guidelines for Laravel Boost",
+    "keywords": [
+        "laravel",
+        "boost",
+        "guidelines",
+        "coding-standards",
+        "spatie"
+    ],
+    "homepage": "https://github.com/spatie/boost-spatie-guidelines",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0|^4.0",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\BoostSpatieGuidelines\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\BoostSpatieGuidelines\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\BoostSpatieGuidelines\\BoostSpatieGuidelinesServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
