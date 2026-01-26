@@ -1,7 +1,5 @@
 # Spatie Guidelines for Laravel Boost
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/boost-spatie-guidelines.svg?style=flat-square)](https://packagist.org/packages/spatie/boost-spatie-guidelines)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/spatie/boost-spatie-guidelines/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/spatie/boost-spatie-guidelines/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/boost-spatie-guidelines.svg?style=flat-square)](https://packagist.org/packages/spatie/boost-spatie-guidelines)
 
 Bring Spatie's battle-tested Laravel & PHP coding guidelines to your AI-assisted development workflow with Laravel Boost.
