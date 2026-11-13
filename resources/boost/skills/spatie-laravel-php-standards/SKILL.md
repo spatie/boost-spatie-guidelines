@@ -26,6 +26,12 @@ Apply Spatie's Laravel and PHP guidelines to keep code style consistent and Lara
 3. Apply the core Laravel principle first, then PHP standards, then section-specific rules.
 4. If a rule conflicts with existing project conventions, follow Laravel conventions and keep changes consistent.
 
+## Rector and PHP Formatters
+- Read the project's Rector and formatter configuration and Composer scripts before changing tool configuration. This package does not provide a Rector, Pint, or PHP-CS-Fixer preset.
+- Use the project's existing commands. Run Rector before the formatter, then tests and static analysis. Use the project's chosen formatter rather than adding a second one.
+- Review structural changes against these guidelines. A formatter does not enforce every convention, such as promoting constructor properties only when all can be promoted, or choosing controller responsibilities.
+- If a tool repeatedly rewrites code away from the intended conventions, identify the responsible rule and report the conflict. Change the configuration only when that is part of the requested work; do not repeatedly undo the tool's output.
+
 ## Core Rules (Summary)
 - Follow Laravel conventions first.
 - Follow PSR-1, PSR-2, and PSR-12.

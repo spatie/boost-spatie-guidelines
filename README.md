@@ -50,6 +50,18 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 
 Once installed, AI assistants using Laravel Boost will automatically reference these guidelines when generating code. No additional configuration needed!
 
+## Rector and PHP formatters
+
+This package provides coding guidance for AI assistants. It does not install or configure Rector, Laravel Pint, or PHP-CS-Fixer, and does not include a Spatie preset for those tools.
+
+Rector changes code structure using the rules enabled in your project. Pint and PHP-CS-Fixer enforce their configured formatting and style rules. Neither the guidelines nor a formatter guarantees that every Rector transformation follows every Spatie convention.
+
+Use your project's existing tool configuration and scripts. Run Rector first, then the project's formatter, followed by tests and static analysis. In CI, use the tools' check modes, such as `rector process --dry-run`, `pint --test`, or `php-cs-fixer fix --dry-run --diff`. There is no need to run both Pint and PHP-CS-Fixer; Pint is built on PHP-CS-Fixer.
+
+Formatting after Rector does not undo structural changes. For example, Rector's `ClassPropertyAssignToConstructorPromotionRector` can promote only some properties, while these guidelines recommend promotion when all properties can be promoted. Pint's default Laravel preset and PHP-CS-Fixer's PSR-12 set do not enforce that condition. Naming, controller responsibilities, and context-dependent readability also need review.
+
+If a transformation conflicts with your intended conventions, identify the rule from Rector's diff and review whether to configure or skip it. Keep that decision in the project's configuration rather than repeatedly rewriting code that the next tool run will change again. See the configuration documentation for [Rector](https://getrector.com/documentation/config-configuration), [Pint](https://laravel.com/docs/pint#configuring-pint), and [PHP-CS-Fixer](https://cs.symfony.com/doc/config.html).
+
 ## Keeping Guidelines Up to Date
 
 Re-run the Boost installer after updating the package to refresh guidelines:
